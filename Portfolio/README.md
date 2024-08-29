@@ -11,8 +11,3 @@ Welcome to the **Professional Portfolio Template** repository! This project prov
 - **Project Display**: Feature your best work with dedicated project sections.
 - **Contact Form**: Includes a working contact form for potential employers or collaborators to reach out.
 - **Styling with Stickers and Colors**: Customize your portfolio with various stickers and color themes to reflect your personality and style.
-
-## How to Use
-
-1. **Clone or Download the Repository**: Clone this repository to your local machine or download it as a ZIP file.
-   ```bash
