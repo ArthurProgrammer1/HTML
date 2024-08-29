@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur's Professional Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #282c34;
+            color: #61dafb;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: #61dafb;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #4a4a4a;
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        /* About Section */
+        #about {
+            text-align: center;
+            padding: 60px 0;
+            background-color: #f4f4f4;
+            border-bottom: 2px solid #ddd;
+        }
+
+        #about img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        #about h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        #about p {
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        /* Skills Section */
+        #skills {
+            padding: 60px 0;
+            background-color: #ffffff;
+        }
+
+        #skills h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .skill-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .skill-name {
+            flex: 1;
+            font-weight: bold;
+        }
+
+        .skill-progress {
+            flex: 3;
+            background-color: #ddd;
+            height: 20px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .skill-progress div {
+            height: 100%;
+            background-color: #61dafb;
+            transition: width 0.5s;
+        }
+
+        /* Projects Section */
+        #projects {
+            padding: 60px 0;
+        }
+
+        #projects h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .project img {
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .project-text {
+            width: 50%;
+            padding: 10px;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #f4f4f4;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        #contact h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #contact input,
+        #contact textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #contact button {
+            padding: 15px 20px;
+            background-color: #61dafb;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        #contact button:hover {
+            background-color: #4a90e2;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #282c34;
+            color: #61dafb;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #61dafb;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .project {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .project img,
+            .project-text {
+                width: 100%;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Arthur's Professional Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <img src="https://via.placeholder.com/150" alt="Arthur's Photo">
+        <h1>Hello, I'm Arthur</h1>
+        <p>A passionate and skilled web developer with a strong foundation in Python. I create dynamic websites and innovative applications that solve real-world problems.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-bar">
+                <div class="skill-name">HTML</div>
+                <div class="skill-progress">
+                    <div style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-name">CSS</div>
+                <div class="skill-progress">
+                    <div style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-progress">
+                    <div style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-name">Python</div>
+                <div class="skill-progress">
+                    <div style="width: 95%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="https://via.placeholder.com/400x300" alt="Project Image">
+            <div class="project-text">
+                <h3>Dynamic Web Application</h3>
+                <p>This project demonstrates my ability to create interactive web applications using Python's Django framework. It features user authentication, dynamic content, and a polished UI.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="https://via.placeholder.com/400x300" alt="Project Image">
+            <div class="project-text">
+                <h3>Real-Time Data Dashboard</h3>
+                <p>A Python-powered dashboard that displays real-time data analytics. The project utilizes Flask and various APIs to pull and visualize data dynamically, showcasing my backend skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Let's connect! Find me on</p>
+        <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Twitter</a>
+    </footer>
+</body>
+
+</html>
